@@ -1,96 +1,50 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# QUAK-POP 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Liyana Shirin A A
 
-
-### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
 
 ### Project Description
-[2-3 lines about what your project does]
-
+Quak Pop is a wonderfully useless bubble wrap simulator where you pop bubbles just to find a duck that says 'quak'. That’s it. No points, no levels — just pure, pointless joy. Because why not?
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+People don’t get enough closure from popping real bubble wrap because the bubbles never talk back. It’s 2025 — we deserve better.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+A duck that says “quak” when you find it. Emotional validation, but in bubble form.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+  html
+  css
+  js
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
-
-### Implementation
-For Software:
-# Installation
-[commands]
-
-# Run
-[commands]
-
-### Project Documentation
-For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot1](The front page )
+<img width="1899" height="863" alt="Screenshot 2025-08-02 071056" src="https://github.com/user-attachments/assets/2bde0477-e1dd-4093-b0e7-3646f6456a58" />
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+The front page
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+![Screenshot2](Result page)
+<img width="1918" height="843" alt="Screenshot 2025-08-02 071231" src="https://github.com/user-attachments/assets/4ba0e06b-0913-48a7-8a6b-cdcb45742956" />
 
-For Hardware:
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
+![Screenshot3](popping page)
+<img width="1858" height="846" alt="Screenshot 2025-08-02 071353" src="https://github.com/user-attachments/assets/c7b82fa2-0048-449f-9b8f-7fc9a6dbded0" />
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+https://drive.google.com/file/d/1tT_qauip8z5fL-z1SSSVFO-Ph55ijUmz/view?usp=sharing
+When you start the game you pop and pop and pop at one point it will pop and a duck will appear and its goes yuck which is funny and surprising
 
-# Additional Demos
-[Add any extra demo materials/links]
 
-## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 

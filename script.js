@@ -57,14 +57,21 @@ function createBubbles() {
   popClone.volume = 1;
   popClone.play();
 
-  if (i == duckIndex) {
-    setTimeout(() => {
-      quakSound.play();
-      gameScreen.classList.add("hidden");
-      endScreen.classList.remove("hidden");
-      launchConfetti();
-    }, 300);
-  }
+ if (i == duckIndex) {
+  const duckImg = document.createElement("img");
+  duckImg.src = "assets/images/duck.png";
+  duckImg.alt = "Found Duck!";
+  duckImg.classList.add("bubble-duck");
+  bubble.appendChild(duckImg);
+
+  setTimeout(() => {
+    quakSound.play();
+    gameScreen.classList.add("hidden");
+    endScreen.classList.remove("hidden");
+    launchConfetti();
+  }, 1000); // Give time for user to see the duck
+}
+
 });
 
 

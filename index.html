@@ -8,25 +8,28 @@
 <body>
   <div id="start-screen">
   <div class="duck-walk">
-    <img src="quak-pop/assets/images/duck.png" alt="Duck" class="duck walk">
+    <img src="assets/images/duck.png" alt="Duck" class="duck walk">
   </div>
   <h1 style="color: rgb(212, 218, 93);">Quak Pop!</h1>
   <button id="start-btn" style="color: aliceblue;">Start Popping</button>
 </div>
 
   <div id="game-screen" class="hidden">
+  <div class="game-content">
+    <img src="assets/images/duck.png" alt="Duck" class="duck">
     <div id="bubble-wrap"></div>
   </div>
+</div>
 
   <div id="end-screen" class="hidden">
-    <img src="quak-pop/assets/images/duck.png" alt="Duck" class="duck">
+    <img src="assets/images/duck.png" alt="Duck" class="duck">
     <h2 style="color: beige;">QUAK! You found me!</h2>
     <button id="restart-btn">Restart</button>
   </div>
 
-  <audio id="pop-sound" src="quak-pop/assets/sounds/pop.mp3" preload="auto"></audio>
-  <audio id="quak-sound" src="quak-pop/assets/sounds/duck.mp3"></audio>
-  <audio id="start-sound" src="quak-pop/assets/sounds/start.mp3"  preload="auto"></audio>
+  <audio id="pop-sound" src="assets/sounds/pop.mp3" preload="auto"></audio>
+  <audio id="quak-sound" src="assets/sounds/duck.mp3"></audio>
+  <audio id="start-sound" src="assets/sounds/start.mp3"  preload="auto"></audio>
 
   <div id="confetti-container"></div>
 

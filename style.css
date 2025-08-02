@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #c288ae;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#start-screen, #end-screen {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+
+
+.duck {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.duck:not(.walk) {
+  animation: float 3s ease-in-out infinite;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #918216;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#bubble-wrap {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 20px;
+  padding: 40px;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: rgba(240, 240, 240, 0.7);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+}
+
+
+#bubble-wrap {
+  background-color: rgba(240, 240, 240, 0.7);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px; /* Or whatever width fits 10 bubbles well */
+  margin: 0 auto;
+  justify-items: center;
+}
+
+
+
+.bubble {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffffffcc, #c2c2c2cc);
+  box-shadow:
+    inset -4px -4px 6px rgba(255, 255, 255, 0.6),
+    inset 4px 4px 6px rgba(0, 0, 0, 0.1),
+    0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  transform: perspective(100px) translateZ(0);
+}
+
+.bubble.popped {
+  background-color: #0e0c0c9f;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transform: scale(0.95);
+  cursor: default;
+}
+
+
+.duck-walk {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.duck.walk {
+  position: absolute;
+  top: 0;
+  left: -220px;
+  animation: waddle 4s ease-out forwards;
+}
+
+@keyframes waddle {
+  0% {
+    left: -220px;
+  }
+  100% {
+    left: calc(50% - 100px);
+  }
+}
+.bubble {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+.bubble:hover {
+  transform: scale(1.1);
+  box-shadow:
+    inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+    inset 2px 2px 6px rgba(0, 0, 0, 0.15),
+    0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+#confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.confetti {
+  position: fixed;
+  top: 0;
+  font-size: 24px;
+  animation-name: fall;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  z-index: 9999;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-50px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(120vh) rotate(1440deg);
+    opacity: 0.9;
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.game-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* spacing between duck and bubbles */
+  width: 100%;
+}
+.bubble-duck {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: appear 0.5s ease-in-out forwards;
+}
+
+@keyframes appear {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
